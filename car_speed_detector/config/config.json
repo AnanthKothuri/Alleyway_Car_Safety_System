@@ -1,0 +1,31 @@
+{
+	// number of frames required to construct a reasonable background
+	// model
+	"frame_count": 32,
+
+	// path to yolo weights and labels
+	"yolo_path": "yolo-coco",
+
+	// minimum confidence to filter out weak detections
+	"confidence": 0.5,
+
+	// non-maxima suppression threshold
+	"threshold": 0.3,
+
+	// coordinates of unauthorized zones in (x1, y1, x2, y2) format
+	"unauthorized_zone": [[50, 0, 350, 400]],
+
+	// list of classes being considered in the surveillance (all
+	// other classes the object detector was trained on will be
+	// ignored)
+	"consider": ["person", "car", "truck", "bicycle", "motorbike"],
+
+	// output video codec, output video FPS, and path to the output
+	// videos
+	"codec": "MJPG",
+	"fps": 10,
+	"output_path": "output",
+
+	// key clip writer buffer size
+	"buffer_size": 32
+}
